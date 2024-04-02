@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: Montserrat;
+  background-color: #ff7978;
+  background-image: url(/assets/bg-intro-desktop.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.textSection {
+  width: 600px;
+  color: white;
+}
+
+.title {
+  font-size: 50px;
+}
+
+.content {
+  width: 400px;
+}
+
+form {
+  height: 330px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+input {
+  height: 35px;
+  width: 320px;
+  font-family: Montserrat;
+  outline: none;
+  margin: 7px 0;
+  border: 1px solid gray;
+}
+
+button {
+  height: 35px;
+  width: 330px;
+  outline: none;
+  border: none;
+  margin-top: 7px;
+  margin-bottom: 15px;
+  background-color: green;
+  font-family: Montserrat;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 11px;
+}
+.topDiv {
+  height: 40px;
+  width: 400px;
+  background-color: purple;
+  border-radius: 4px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+.SevenDaysSpan {
+  font-weight: bold;
+}
+
+small {
+  font-size: 10px;
+}

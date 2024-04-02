@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  font-family: Montserrat;
+}
+h1 {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+
+.boxOne {
+  height: 100vh;
+  background-color: #264653;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxOneTitle {
+  font-size: 200px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: white;
+}
+
+.boxOneSubTitle {
+  font-size: 75px;
+  color: #00b4d8;
+}
