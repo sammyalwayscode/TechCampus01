@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  font-family: Montserrat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blockOne {
+  width: 500px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.topOne {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.topTwo {
+  font-size: 30px;
+  margin-top: 5px;
+}
+
+.topThree {
+  margin-top: -10px;
+}
+
+.BlockTwo {
+  display: flex;
+}
+
+.myBox {
+  width: 300px;
+  height: 220px;
+  /* background-color: red; */
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  border-top: 3px solid cyan;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.Content {
+  font-size: smaller;
+  margin-bottom: 70px;
+}
+
+.Title {
+  font-size: 18px;
+}
+
+.IconDiv {
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: flex-end;
+}
