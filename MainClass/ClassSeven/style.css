@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+}
+.GeneralContainer {
+  background-color: rgb(228, 245, 250);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ImageDiv {
+  height: 250px;
+  width: 250px;
+  background-color: yellow;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+}
+
+.TextDiv {
+  font-family: Montserrat;
+  width: 410px;
+  background-color: #fff;
+  padding: 20px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  p {
+    font-size: 14px;
+    color: gray;
+  }
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  color: gray;
+}
+
+.MainCardContainer {
+  display: flex;
+}
+
+.proImgName {
+  display: flex;
+  align-items: center;
+}
+
+.mainProfileImage {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.NameDiv {
+  font-size: 15px;
+  font-weight: 700;
+  color: darkgray;
+}
+
+small {
+  font-size: 12px;
+  font-weight: 700;
+  color: lightgray;
+}
+
+.iconDiv {
+  height: 30px;
+  width: 30px;
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
