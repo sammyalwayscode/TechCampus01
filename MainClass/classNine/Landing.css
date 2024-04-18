@@ -1,0 +1,93 @@
+h1 {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: Poppins;
+}
+
+header {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: aqua; */
+}
+
+.headerHold {
+  width: 85%;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerNavigations {
+  display: flex;
+
+  nav {
+    margin: 0px 20px;
+  }
+}
+
+.heroPage {
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.heroPageHold {
+  width: 85%;
+  /* background-color: aquamarine; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heroTextArea {
+  width: 500px;
+
+  h1 {
+    font-size: 30px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+
+.heroImage {
+  img {
+    width: 550px;
+  }
+}
+
+.inputAndButtonHold {
+  input {
+    height: 32px;
+    width: 280px;
+    font-family: Poppins;
+    padding-left: 10px;
+  }
+
+  button {
+    height: 35px;
+    width: 150px;
+    font-family: Poppins;
+    font-weight: 600;
+    background-color: #4285f4;
+    color: #fff;
+    border: none;
+    margin-left: 10px;
+  }
+}
+
+.StayPossitive {
+  img {
+    width: 100%;
+  }
+}
+
+.stayPositiveHold {
+  background-color: #f8f8fe;
+}
