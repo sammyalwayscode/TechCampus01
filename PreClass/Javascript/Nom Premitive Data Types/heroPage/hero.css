@@ -1,0 +1,36 @@
+.generalDiv {
+  font-family: poppins;
+}
+
+.header {
+  /* background-color: aquamarine; */
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+}
+
+.divOne {
+  display: flex;
+}
+
+.navagation {
+  display: flex;
+}
+
+nav {
+  margin-right: 20px;
+}
+
+.logo {
+  margin-right: 40px;
+}
+
+.reg {
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 40px;
+  width: 120px;
+  background-color: transparent;
+  border-radius: 5px;
+}

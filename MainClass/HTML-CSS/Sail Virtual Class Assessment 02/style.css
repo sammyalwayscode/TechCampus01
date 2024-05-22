@@ -1,0 +1,85 @@
+body {
+  font-family: poppins;
+}
+
+.upperMainDiv {
+  text-align: center;
+  /* background-color: red; */
+  margin-top: 40px;
+}
+
+.titleOne {
+  font-size: 25px;
+}
+
+.titleTwo {
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.leftCard {
+  /* background-color: aquamarine; */
+  width: 350px;
+  padding: 30px 20px;
+  border-radius: 4px;
+  border-top: 5px solid salmon;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  margin: 15px;
+}
+
+.class2 {
+  width: 350px;
+  padding: 30px 20px;
+  border-radius: 4px;
+  border-top: 5px solid darkorange;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  margin: 15px;
+}
+
+.class3 {
+  width: 350px;
+  padding: 30px 20px;
+  border-radius: 4px;
+  border-top: 5px solid darkgoldenrod;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  margin: 15px;
+}
+
+.rightCard {
+  width: 350px;
+  padding: 30px 20px;
+  border-radius: 4px;
+  border-top: 5px solid darkcyan;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  margin: 15px;
+}
+
+.lowerMainDiv {
+  /* background-color: aquamarine; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.imageDiv {
+  /* background-color: red; */
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 500px) {
+  .class2 {
+    width: 250px;
+  }
+
+  .MiddleCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

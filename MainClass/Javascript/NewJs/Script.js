@@ -58,6 +58,7 @@
 
 let myName = "Olorunda Samuel";
 let myProfile = "rememberance";
+let myStory = "Jide is a boy and Jide loves to go to school, Jide is in Pry 5";
 let myNameLenght = myName.length;
 let makeLower = myName.toLowerCase();
 let makeUpper = myName.toUpperCase();
@@ -65,6 +66,9 @@ let myIndex = myName.indexOf("o");
 let myTrim = myName.trim();
 let myConcat = myName.concat(" Is a good boy");
 let mySplit = myProfile.split("e", 4);
+let mySlice = myName.slice(-10);
+let mySubString = myName.substring(10);
+let myReplace = myStory.replaceAll("Jide", "Shade");
 
 console.log(myNameLenght);
 console.log(makeLower);
@@ -73,3 +77,15 @@ console.log(myIndex);
 console.log(myTrim);
 console.log(myConcat);
 console.log(mySplit);
+console.log(mySlice);
+console.log(mySubString);
+console.log(myReplace);
+
+// Template String
+let a = 20;
+let b = 32;
+let c = a + b;
+let myNewName = "Bose";
+
+let myTempString = `Hello ${myNewName}, Hpow are you doing?, your total items is ${c}`;
+console.log(myTempString);

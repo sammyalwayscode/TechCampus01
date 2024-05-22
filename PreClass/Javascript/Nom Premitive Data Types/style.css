@@ -1,0 +1,37 @@
+.generalDiv {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: red; */
+}
+
+.imageDiv {
+  margin-right: 70px;
+}
+
+.textDiv {
+  margin-left: 70px;
+  text-align: center;
+
+  h1 {
+    font-size: 200px;
+    /* background-color: red; */
+    margin: 0;
+  }
+  h3 {
+    font-size: 30px;
+    margin: 0;
+  }
+  button {
+    height: 50px;
+    width: 150px;
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 30px;
+    margin-top: 20px;
+  }
+}

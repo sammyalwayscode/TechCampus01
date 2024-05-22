@@ -95,3 +95,25 @@ p {
 .brandHold {
   margin-top: 50px;
 }
+
+@media screen and (max-width: 768px) {
+  h1 {
+    text-align: center;
+    font-size: 50px;
+  }
+  p {
+    text-align: center;
+  }
+  .navigations {
+    display: none;
+  }
+  .headerBoxTwo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    text-align: right;
+  }
+}
