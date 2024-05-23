@@ -1,0 +1,67 @@
+h1 {
+  margin: 0px;
+}
+body {
+  margin: 0px;
+  font-family: Montserrat;
+}
+
+.socialHeader {
+  /* background-color: red; */
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socailHeaderHold {
+  width: 90%;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fourBoxes {
+  display: flex;
+  justify-content: center;
+  /* background-color: red; */
+}
+
+.fourBoexHold {
+  /* background-color: aqua; */
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+}
+
+.bigBox {
+  height: 350px;
+  width: 350px;
+  background-color: #eeeeee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+
+  h1 {
+    font-size: 50px;
+  }
+  small {
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin-bottom: 30px;
+  }
+}
+
+.fbUserName {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .fourBoexHold {
+    justify-content: center;
+  }
+}
