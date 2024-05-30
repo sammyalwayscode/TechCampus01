@@ -1,0 +1,50 @@
+.headerContainer {
+  /* background-color: brown; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  font-family: Montserrat;
+}
+
+.headerWrapper {
+  width: 90%;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoNav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 50px;
+}
+
+.navigations {
+  display: flex;
+}
+
+.navs {
+  margin: 0px 15px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.login {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0px 15px;
+}
+
+.headerBut {
+  height: 35px;
+  width: 120px;
+  font-family: Montserrat;
+  font-weight: 600;
+  background-color: transparent;
+  border-radius: 8px;
+}

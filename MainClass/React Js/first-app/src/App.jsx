@@ -1,13 +1,9 @@
-import "./App.css";
-// import imageOne from "./assets/mail.jpg";
+import Layout from "./layout/Layout";
 
 const App = () => {
   return (
-    <div className="container">
-      <div className="LogoHold">
-        <h1>Logo</h1>
-        {/* <img src={imageOne} alt="" /> */}
-      </div>
+    <div>
+      <Layout />
     </div>
   );
 };
