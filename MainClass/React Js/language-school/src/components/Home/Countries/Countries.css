@@ -1,0 +1,51 @@
+.generalContainer {
+  margin: 70px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contaryWrapper {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+
+.countryCard {
+  height: 150px;
+  width: 180px;
+  /* background-color: lightcoral; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+  margin: 0px 10px;
+
+  h3 {
+    margin: 10px 0px 5px 0px;
+    color: #5f2a5d;
+  }
+
+  p {
+    margin: 0;
+    color: #5f2a5d;
+  }
+}
+
+.countryCard:hover {
+  background-color: #f9eee1;
+  transform: scale(1.1);
+  transition: all 350ms;
+}
+
+@media screen and (max-width: 768px) {
+  .contaryWrapper {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 450px) {
+  .countryCard {
+    width: 150px;
+  }
+}

@@ -1,0 +1,127 @@
+.HomTwoContainer {
+  max-width: 1536px;
+  /* background-color: aquamarine; */
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-bottom: 100px;
+}
+
+.HomeTwoWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.HomeTwoText {
+  max-width: 500px;
+
+  h1 {
+    font-size: 48px;
+    font-family: Sora;
+  }
+
+  p {
+    margin-top: -6px;
+    color: #5f2a5d;
+    line-height: 25px;
+    margin-bottom: 50px;
+  }
+}
+
+.HomeTwoImage {
+  img {
+    max-width: 500px;
+  }
+}
+
+.MainBar {
+  margin: 15px 0px;
+}
+
+.namePercent {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.mainName {
+  color: #5f2a5d;
+}
+
+.mainPercent {
+  background-color: #f2f2f2;
+  color: #b3b4b3;
+  font-size: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 2px;
+}
+
+.percentBar {
+  height: 8px;
+  background-color: #f0f0f0;
+}
+
+.Bar1 {
+  width: 70%;
+  height: 100%;
+  background-color: #ff885e;
+}
+.Bar2 {
+  width: 96%;
+  height: 100%;
+  background-color: #ff885e;
+}
+.Bar3 {
+  width: 15%;
+  height: 100%;
+  background-color: #ff885e;
+}
+
+@media (max-width: 1034px) {
+  .HomeTwoWrapper {
+    justify-content: center;
+  }
+
+  .HomeTwoText {
+    text-align: center;
+  }
+}
+
+@media (max-width: 1536px) {
+  .HomTwoContainer {
+    max-width: 1280px;
+    /* background-color: bisque; */
+  }
+}
+
+@media (max-width: 500px) {
+  .HomeTwoImage {
+    width: 90%;
+    img {
+      width: 100%;
+    }
+  }
+
+  .HomeTwoText {
+    max-width: 500px;
+
+    h1 {
+      font-size: 32px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .MainBar {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -1,0 +1,77 @@
+.HomeFiveContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.HomeFiveWrapper {
+  width: 95%;
+  border-radius: 15px;
+  background-color: #f9eee1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0px;
+
+  h1 {
+    color: #5f2a5d;
+    margin: 10px 0px;
+  }
+
+  p {
+    text-align: center;
+    line-height: 28px;
+  }
+}
+
+.profileHolder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mainProfile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 20px;
+
+  p {
+    width: 350px;
+    color: #755365;
+    font-size: 16px;
+    line-height: 28px;
+    margin: 0;
+  }
+  h3 {
+    margin: 0px;
+    margin-bottom: 10px;
+    color: #5f2a5d;
+  }
+  span {
+    color: #ff885e;
+  }
+  hr {
+    height: 0.5px;
+    width: 150px;
+    border: none;
+    background-color: #ff885e;
+    margin: 15px 0px;
+  }
+}
+
+.profileImageDiv {
+  height: 450px;
+  width: 385px;
+  background-color: lightpink;
+  border-radius: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+  img {
+    height: 100%;
+    width: 100%;
+    border-radius: 180px;
+  }
+}

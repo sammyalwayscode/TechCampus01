@@ -1,0 +1,65 @@
+.HomeThreeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeThreeWrapper {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    max-width: 700px;
+    font-size: 48px;
+    color: #5f2a5d;
+    font-family: Sora;
+  }
+}
+
+.HomeThreeCardsHolder {
+  width: 90%;
+  min-height: 400px;
+  background: url("../../../assets/webp/language4-section-bg1.webp");
+  background-position: center;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.HomThreeCard {
+  background-color: #fff;
+  height: 285px;
+  width: 385px;
+  border-radius: 25px;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.HomeThreeCardHolder {
+  width: 85%;
+  /* background-color: antiquewhite; */
+  h3 {
+    font-size: 20px;
+    color: #5f2a5d;
+  }
+
+  p {
+    color: #755365;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 500px) {
+  .HomThreeCard {
+    width: 90%;
+    text-align: center;
+  }
+}

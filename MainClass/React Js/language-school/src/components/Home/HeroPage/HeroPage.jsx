@@ -1,6 +1,7 @@
 import "./HeroPage.css";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import heroImage from "../../../assets/webp/heroImage.webp";
+import BeLangComp from "../../block/BeLangComp/BeLangComp";
 
 const HeroPage = () => {
   return (
@@ -8,7 +9,7 @@ const HeroPage = () => {
       <div className="heroBox">
         <div className="heroWrapper">
           <div className="heroTextArea">
-            <span className="heroTextCaption">BeLanguageSchool</span>
+            <BeLangComp />
             <h1>
               <span
                 style={{

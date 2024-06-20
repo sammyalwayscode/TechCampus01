@@ -1,0 +1,103 @@
+.homeFourContainer {
+  max-width: 1536px;
+  /* background-color: beige; */
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0px;
+}
+
+.homeFourWrapper {
+  width: 90%;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.homeFourText {
+  width: 500px;
+  /* background-color: aquamarine; */
+
+  h2 {
+    font-size: 32px;
+    font-family: Sora;
+    line-height: 40px;
+    color: #5f2a5d;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    height: 55px;
+    width: 195px;
+    background-color: #ff885e;
+    font-size: 15px;
+    font-weight: 700;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 350ms;
+
+    span {
+      margin-right: 10px;
+      font-family: Poppins;
+    }
+  }
+
+  button:hover {
+    opacity: 0.85;
+    transition: all 350ms;
+    transform: scale(0.95);
+  }
+}
+
+.homeFourImageHold {
+  img {
+    width: 550px;
+  }
+}
+
+@media (max-width: 1176px) {
+  .homeFourWrapper {
+    justify-content: center;
+  }
+
+  .homeFourImageHold {
+    margin-bottom: 40px;
+    img {
+      width: 550px;
+    }
+  }
+
+  .homeFourText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .homeFourText {
+    width: 100%;
+  }
+
+  .homeFourImageHold {
+    img {
+      width: 100%;
+    }
+  }
+}
