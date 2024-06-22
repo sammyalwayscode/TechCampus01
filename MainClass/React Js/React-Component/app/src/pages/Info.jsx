@@ -2,23 +2,31 @@ import { useEffect, useState } from "react";
 
 const Info = () => {
   const [name, setName] = useState("");
-  const [storeName, setStoreName] = useState(() => {
-    const saveNames = localStorage.getItem("storeName");
-    return saveNames ? JSON.parse(saveNames) : [];
+  const [storeNames, setStoreNames] = useState(() => {
+    const saveName = localStorage.getItem("storeNames");
+    return saveName
+      ? JSON.parse(saveName)
+      : [
+          { userName: "Kola" },
+          { userName: "Solomon" },
+          { userName: "Matthew" },
+        ];
   });
+  // console.log(name);
 
-  const postName = () => {
-    setStoreName([...storeName, { myName: name }]);
+  const newName = () => {
+    setStoreNames([...storeNames, { userName: name }]);
+    setName("");
   };
 
   const clearNames = () => {
-    localStorage.removeItem("storeName");
-    setStoreName([]);
+    localStorage.removeItem("storeNames");
+    setStoreNames([]);
   };
 
   useEffect(() => {
-    localStorage.setItem("storeName", JSON.stringify(storeName));
-  }, [storeName]);
+    localStorage.setItem("storeNames", JSON.stringify(storeNames));
+  }, [storeNames]);
 
   return (
     <div
@@ -30,20 +38,24 @@ const Info = () => {
       <h1>This is the Info page</h1>
       <section>
         <input
-          type="text"
           value={name}
           onChange={(e) => {
             setName(e.target.value);
           }}
+          type="text"
         />
+
         <br />
-        <button onClick={postName}>Submmit</button>
+        <button onClick={newName}>Submmit</button>
       </section>
       <section>
         <h2>List of Names</h2>
         <ul>
-          {storeName.map((data, index) => (
-            <li key={index}>{data.myName}</li>
+          {storeNames.map((data, index) => (
+            <li key={index}>
+              {"  "}
+              {index} {data.userName}
+            </li>
           ))}
         </ul>
       </section>
