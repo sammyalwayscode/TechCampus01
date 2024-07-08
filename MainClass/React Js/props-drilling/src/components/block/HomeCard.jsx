@@ -6,9 +6,19 @@ import { FaLink } from "react-icons/fa6";
 import styled from "styled-components";
 // import logo from "../../assets/react.svg";
 // import demo from "../../assets/demo.jpg";
+
+import Swal from "sweetalert2";
+
 const HomeCard = (props) => {
+  const alertUser = () => {
+    Swal.fire({
+      title: "Update Coming Soon!",
+      text: "The detail page is not yet available",
+      icon: "info",
+    });
+  };
   return (
-    <Container>
+    <Container onClick={alertUser}>
       <CardLogo>
         <img src={props.logo} alt="icon" />
       </CardLogo>
@@ -56,6 +66,10 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   padding: 1rem;
+
+  @media (max-width: 500px) {
+    width: 95%;
+  }
 `;
 const CardLogo = styled.div`
   /* background-color: aqua; */

@@ -2,8 +2,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styled from "styled-components";
-import demo1 from "../assets/demo.jpg";
-import demo2 from "../assets/mainbg.jpg";
+import demo1 from "../assets/workflow.png";
+import demo2 from "../assets/caro1.jpeg";
+import demo3 from "../assets/car2.jpg";
 
 const Carocel = () => {
   const settings = {
@@ -19,13 +20,12 @@ const Carocel = () => {
       <Slider {...settings}>
         <Slide>
           <img src={demo1} alt="" />
-          <h1>Hello</h1>
         </Slide>
         <Slide>
           <img src={demo2} alt="" />
         </Slide>
         <Slide>
-          <img src={demo1} alt="" />
+          <img src={demo3} alt="" />
         </Slide>
       </Slider>
     </Div>
@@ -45,5 +45,6 @@ const Slide = styled.div`
 `;
 
 const Div = styled.div`
-  background-color: red;
+  /* background-color: red; */
+  margin: 50px 0px;
 `;

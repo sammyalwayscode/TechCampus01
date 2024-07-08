@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styled from "styled-components";
 
 const Profile = () => {
@@ -9,29 +9,52 @@ const Profile = () => {
   const [phoneNo, setPhoneNo] = useState(0);
   const [bio, setBio] = useState("");
   //   const [gender, setGender] = useState("");
+  const [avatar, setAvatar] = useState(null);
 
-  const [storeProfile, setStoreProfile] = useState([]);
+  const [storeProfile, setStoreProfile] = useState(() => {
+    const saveData = localStorage.getItem("storeProfile");
+    return saveData ? JSON.parse(saveData) : [];
+  });
 
   // to chect if it's working on the console
   console.log(name, age, date, phoneNo, bio);
 
   // the third step :  to post a new profile
   const createNewProfile = () => {
-    setStoreProfile([...storeProfile, { name, age, date, phoneNo, bio }]);
+    const avatarURL = URL.createObjectURL(avatar);
+
+    setStoreProfile([
+      ...storeProfile,
+      { name, age, date, phoneNo, bio, avatar: avatarURL },
+    ]);
     setAge(0);
     setBio("");
     setDate("");
     setName("");
     setPhoneNo("");
+    setAvatar(null);
+  };
+
+  const clearData = () => {
+    localStorage.removeItem("storeProfile");
+    setStoreProfile([]);
   };
 
   console.log(storeProfile);
 
+  useEffect(() => {
+    localStorage.setItem("storeProfile", JSON.stringify(storeProfile));
+  }, [storeProfile]);
+
   return (
     <Container>
       {/* create a simple profile with a name, age, gender, DOB, phoneNo, bio, Profile Picture */}
-      <div>
+      <Form>
         <Sections>
+          {/* Creating an Image Input */}
+
+          <input type="file" onChange={(e) => setAvatar(e.target.files[0])} />
+
           <input
             type="text"
             placeholder="Enter your name"
@@ -85,7 +108,8 @@ const Profile = () => {
           <input type="radio" />
         </main> */}
         <Button onClick={createNewProfile}>Submmit</Button>
-      </div>
+        <Button onClick={clearData}>Clear Data</Button>
+      </Form>
 
       <Data>
         {storeProfile.map((data, index) => (
@@ -96,6 +120,7 @@ const Profile = () => {
             <p> {data.phoneNo} </p>
             <p> {data.bio} </p>
             {/* <p>Gender</p> */}
+            <img src={data.avatar} alt={data.name} width="100" height="100" />
           </Card>
         ))}
       </Data>
@@ -165,3 +190,5 @@ const Card = styled.div`
   padding: 20px;
   margin: 20px;
 `;
+
+const Form = styled.div``;

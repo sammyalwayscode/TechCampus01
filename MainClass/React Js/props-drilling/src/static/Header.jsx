@@ -1,28 +1,33 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Header = () => {
   return (
     <Container>
       <Wrapper>
-        <Logo>
-          {" "}
-          <span
-            style={{
-              color: "#ea4335",
-            }}
-          >
-            Daily
-          </span>
-          <span
-            style={{
-              color: "#34A853",
-            }}
-          >
-            Tech.
-          </span>
-        </Logo>
+        <Link to="/home">
+          <Logo>
+            {" "}
+            <span
+              style={{
+                color: "#ea4335",
+              }}
+            >
+              Daily
+            </span>
+            <span
+              style={{
+                color: "#34A853",
+              }}
+            >
+              Tech.
+            </span>
+          </Logo>
+        </Link>
         <input type="search" placeholder="Enter Your search" />
-        <button>New Post</button>
+        <Link to="/newpost">
+          <button>New Post</button>
+        </Link>
       </Wrapper>
     </Container>
   );
