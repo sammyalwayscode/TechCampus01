@@ -1,41 +1,31 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const Weather = () => {
-  const [city, setCity] = useState("");
-  const [wetherData, setWetherData] = useState(null);
-  const [query, setQuery] = useState("London");
+  const [city, setCity] = useState("lagos");
+  const [weather, setWeather] = useState(null);
 
-  const apiKey = "da3cca3227d2cc39fe84cbc348e6da09";
-  const URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
+  const getweather = async () => {
+    const apiKey = "da3cca3227d2cc39fe84cbc348e6da09";
+    const URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
 
-  const fetchData = async () => {
-    await axios.get(URL).then((res) => {
-      setWetherData(res.data);
-    });
+    await axios.get(URL).then((res) => setWeather(res.data));
   };
 
-  useEffect(() => {
-    fetchData();
-  }, [query]);
+  // &units=metric
 
-  console.log("My Weather", wetherData);
+  console.log(weather);
 
   return (
     <div>
-      <h2>Weather Api</h2>
       <input
-        type="text"
-        placeholder="Enter your city"
+        type="search"
         value={city}
         onChange={(e) => setCity(e.target.value)}
+        placeholder="Your city"
       />
-      <button>Make a search</button>
-
-      <div>
-        <h3>City Name</h3>
-        <h5>Weather</h5>
-      </div>
+      <button onClick={getweather}>Search</button>
+      {(weather.main.temp - 273.15).toFixed(2)} ℃
     </div>
   );
 };

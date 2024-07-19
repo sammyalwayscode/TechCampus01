@@ -30,7 +30,7 @@ const Todo = () => {
             <thead>
               <tr>
                 <th>Title</th>
-                <th> {user} </th>
+                <th> Todo </th>
               </tr>
             </thead>
             <tbody>
