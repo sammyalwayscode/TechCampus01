@@ -64,3 +64,81 @@ const DOB = "April";
 (!isLoggedIn && isAdmin) || DOB === "May"
   ? console.log("You can access the Admin Panell")
   : console.log("Sorry! You cannot access the admin pannel");
+
+// Conditions
+
+// Logical Operator
+
+// const isUnifom = true;
+// const isBooks = false;
+// const isSchoolFee = !true;
+
+// console.log((isUnifom && isSchoolFee) || isBooks);
+
+//Unary Operator
+
+// let a = 3;
+// a++;
+// console.log(a);
+
+// Tunary Operator
+
+// condition ? true : false
+// console.log(12 > 5);
+
+//Write a javascript program that tell the user if he/she is liable to vote in nigeria
+
+// let age = 20;
+// let votersCard = false;
+// let check =
+//   age >= 18 && votersCard ? "You are liable to vote" : "Try again next year";
+
+// console.log(check);
+
+// let age = parseInt(prompt("Enter Your Age"));
+// let voterCard = prompt("Do you have a voters card").toLowerCase();
+// const ceckCondition =
+//   age >= 18 && voterCard === "yes" ? "You can vote" : "Go your mama house";
+
+// alert(ceckCondition);
+
+// const specialCharacter =  "!" || "@" || "." || "#"
+
+// Write a program that tells a user if a number is Positive or Negative
+// Write a program to tell if a number is even or odd
+
+// let num = parseInt(prompt("Enter Your Number"));
+// alert(num > 0 ? "Postive" : "Negative");
+
+// let num = parseInt(prompt("Enter Your Number"));
+// alert(num % 2 === 1 ? "Odd" : "Even");
+
+// for (let i = 0; i < 101; i++) {
+//   console.log("I is:", i);
+// }
+
+// let i = 0;
+
+// while (i < 10) {
+//   console.log("While", i);
+//   i++;
+// }
+
+// for (let i = 0; i < 20; i++) {
+//   if (i % 2 === 0) {
+//     console.log(i);
+//   }
+// }
+
+// let i = 0;
+
+// while (i <= 20) {
+//   if (i % 2 === 0) {
+//     console.log("While", i);
+//   }
+//   i++;
+// }
+
+// for (let i = 0; i <= 10; i++) {
+//   console.log(`3 x ${i} = ${3 * i}`);
+// }

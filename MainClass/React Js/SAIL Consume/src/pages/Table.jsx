@@ -1,9 +1,13 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { NameState } from "../global/GlobalContext";
 
 const Table = () => {
   const [myData, setMyData] = useState([]);
-
+  const { myName } = useContext(NameState);
+  console.log(myName);
   const getData = async () => {
     await axios
       .get("https://jsonplaceholder.typicode.com/users")
@@ -21,6 +25,7 @@ const Table = () => {
   return (
     <div className=" p-20">
       <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
+        <h1> {myName} </h1>
         <table className="w-full text-sm text-left rtl:text-right text-gray-500 ">
           <thead className="text-xs text-gray-700 uppercase bg-gray-50 ">
             <tr>
@@ -39,9 +44,11 @@ const Table = () => {
               <th scope="col" className="px-6 py-3">
                 Phone No
               </th>
-              <th scope="col" className="px-6 py-3">
-                Website
-              </th>
+              <Link to="weather">
+                <th scope="col" className="px-6 py-3">
+                  Website
+                </th>
+              </Link>
             </tr>
           </thead>
           <tbody>
