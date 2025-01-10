@@ -1,39 +1,97 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Document</title>
+    <title>Grid Test</title>
     <style>
-      body {
-        margin: 0;
-        font-family: jokerman;
+      .container {
+        height: 100vh;
+        display: grid;
+        gap: 10px;
+        grid-template-areas:
+          "header header"
+          "sidebar maincontent"
+          "sidebar extracontent"
+          "footer footer";
+
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: auto 1fr auto;
       }
 
-      h1 {
-        margin: 0px;
-        padding: 20px 0px;
-      }
-
-      .red {
+      .header {
+        grid-area: header;
         background-color: red;
-        color: white;
       }
-      .orange {
-        background-color: orange;
-        color: #fff;
+
+      .sidebar {
+        grid-area: sidebar;
+        background-color: blue;
       }
-      .yellow {
-        background-color: yellow;
+
+      .maincontent {
+        grid-area: maincontent;
+        background-color: rgb(221, 255, 0);
       }
-      .green {
+
+      .extracontent {
+        grid-area: extracontent;
         background-color: green;
-        color: #fff;
+      }
+      .footer {
+        grid-area: footer;
+        background-color: brown;
       }
     </style>
   </head>
   <body>
-    <h1 class="red">This is color red</h1>
-    <h1 class="orange">This is color Orange</h1>
-    <h1 class="yellow">This is color Yellow</h1>
-    <h1 class="green">This is color Green</h1>
+    <div class="container">
+      <div class="header">Header</div>
+      <div class="sidebar">Sidebar</div>
+      <div class="maincontent">Main Content</div>
+      <div class="extra-content">Extra Content</div>
+      <div class="footer">Footer</div>
+    </div>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Grid Test</title>
+    <style>
+      .container {
+        background-color: yellow;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      .one {
+        height: 200px;
+
+        background-color: red;
+      }
+      .two {
+        height: 200px;
+
+        background-color: green;
+      }
+      .three {
+        height: 200px;
+
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="one">One</div>
+      <div class="two">Two</div>
+      <div class="three">Three</div>
+      <div class="one">One</div>
+      <div class="two">Two</div>
+      <div class="three">Three</div>
+      <div class="one">One</div>
+      <div class="two">Two</div>
+      <div class="three">Three</div>
+    </div>
   </body>
 </html>
